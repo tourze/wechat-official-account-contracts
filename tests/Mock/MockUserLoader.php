@@ -1,9 +1,9 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountUserContracts\Tests\Mock;
+namespace Tourze\WechatOfficialAccountContracts\Tests\Mock;
 
-use Tourze\WechatOfficialAccountUserContracts\UserInterface;
-use Tourze\WechatOfficialAccountUserContracts\UserLoaderInterface;
+use Tourze\WechatOfficialAccountContracts\UserInterface;
+use Tourze\WechatOfficialAccountContracts\UserLoaderInterface;
 
 /**
  * UserLoaderInterface 的模拟实现，用于测试
@@ -26,12 +26,12 @@ class MockUserLoader implements UserLoaderInterface
     public function addUser(UserInterface $user): self
     {
         $this->usersByOpenId[$user->getOpenId()] = $user;
-        
+
         $unionId = $user->getUnionId();
         if ($unionId !== null) {
             $this->usersByUnionId[$unionId] = $user;
         }
-        
+
         return $this;
     }
 
@@ -44,4 +44,9 @@ class MockUserLoader implements UserLoaderInterface
     {
         return $this->usersByUnionId[$unionId] ?? null;
     }
-} 
+
+    public function syncUserByOpenId(string $openId): ?UserInterface
+    {
+        // TODO: Implement syncUserByOpenId() method.
+    }
+}

@@ -1,11 +1,11 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountUserContracts\Tests;
+namespace Tourze\WechatOfficialAccountContracts\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Tourze\WechatOfficialAccountUserContracts\Tests\Mock\MockUser;
-use Tourze\WechatOfficialAccountUserContracts\Tests\Mock\MockUserLoader;
-use Tourze\WechatOfficialAccountUserContracts\UserInterface;
+use Tourze\WechatOfficialAccountContracts\Tests\Mock\MockUser;
+use Tourze\WechatOfficialAccountContracts\Tests\Mock\MockUserLoader;
+use Tourze\WechatOfficialAccountContracts\UserInterface;
 
 /**
  * UserLoaderInterface 接口的测试类

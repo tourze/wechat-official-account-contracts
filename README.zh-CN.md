@@ -1,11 +1,11 @@
-# wechat-official-account-user-contracts
+# wechat-official-account-contracts
 
 微信用户定义
 
 ## 安装
 
 ```bash
-composer require tourze/wechat-official-account-user-contracts
+composer require tourze/wechat-official-account-contracts
 ```
 
 ## 使用方法

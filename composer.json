@@ -1,5 +1,5 @@
 {
-  "name": "tourze/wechat-official-account-user-contracts",
+  "name": "tourze/wechat-official-account-contracts",
   "description": "微信用户定义",
   "type": "library",
   "license": "MIT",
@@ -12,12 +12,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Tourze\\WechatOfficialAccountUserContracts\\": "src/"
+      "Tourze\\WechatOfficialAccountContracts\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tourze\\WechatOfficialAccountUserContracts\\Tests\\": "tests/"
+      "Tourze\\WechatOfficialAccountContracts\\Tests\\": "tests/"
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountUserContracts;
+namespace Tourze\WechatOfficialAccountContracts;
 
 interface UserInterface
 {
@@ -9,4 +9,9 @@ interface UserInterface
     public function getUnionId(): ?string;
 
     public function getAvatarUrl(): ?string;
+
+    /**
+     * 关联公众号
+     */
+    public function getOfficialAccount(): ?OfficialAccountInterface;
 }

@@ -1,8 +1,9 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountUserContracts\Tests\Mock;
+namespace Tourze\WechatOfficialAccountContracts\Tests\Mock;
 
-use Tourze\WechatOfficialAccountUserContracts\UserInterface;
+use Tourze\WechatOfficialAccountContracts\OfficialAccountInterface;
+use Tourze\WechatOfficialAccountContracts\UserInterface;
 
 /**
  * UserInterface 的模拟实现，用于测试
@@ -17,7 +18,8 @@ class MockUser implements UserInterface
         string $openId,
         ?string $unionId = null,
         ?string $avatarUrl = null
-    ) {
+    )
+    {
         $this->openId = $openId;
         $this->unionId = $unionId;
         $this->avatarUrl = $avatarUrl;
@@ -37,4 +39,9 @@ class MockUser implements UserInterface
     {
         return $this->avatarUrl;
     }
-} 
+
+    public function getOfficialAccount(): ?OfficialAccountInterface
+    {
+        // TODO: Implement getOfficialAccount() method.
+    }
+}

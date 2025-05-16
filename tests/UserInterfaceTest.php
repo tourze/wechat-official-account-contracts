@@ -1,9 +1,9 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountUserContracts\Tests;
+namespace Tourze\WechatOfficialAccountContracts\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Tourze\WechatOfficialAccountUserContracts\Tests\Mock\MockUser;
+use Tourze\WechatOfficialAccountContracts\Tests\Mock\MockUser;
 
 /**
  * UserInterface 接口的测试类
