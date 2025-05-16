@@ -2,6 +2,7 @@
 
 namespace Tourze\WechatOfficialAccountContracts\Tests\Mock;
 
+use Tourze\WechatOfficialAccountContracts\OfficialAccountInterface;
 use Tourze\WechatOfficialAccountContracts\UserInterface;
 use Tourze\WechatOfficialAccountContracts\UserLoaderInterface;
 
@@ -45,7 +46,7 @@ class MockUserLoader implements UserLoaderInterface
         return $this->usersByUnionId[$unionId] ?? null;
     }
 
-    public function syncUserByOpenId(string $openId): ?UserInterface
+    public function syncUserByOpenId(OfficialAccountInterface $officialAccount, string $openId): ?UserInterface
     {
         // TODO: Implement syncUserByOpenId() method.
     }
