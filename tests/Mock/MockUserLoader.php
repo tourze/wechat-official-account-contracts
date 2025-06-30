@@ -48,6 +48,6 @@ class MockUserLoader implements UserLoaderInterface
 
     public function syncUserByOpenId(OfficialAccountInterface $officialAccount, string $openId): ?UserInterface
     {
-        // TODO: Implement syncUserByOpenId() method.
+        return $this->loadUserByOpenId($openId);
     }
 }

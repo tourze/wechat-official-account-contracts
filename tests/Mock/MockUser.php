@@ -42,6 +42,6 @@ class MockUser implements UserInterface
 
     public function getOfficialAccount(): ?OfficialAccountInterface
     {
-        // TODO: Implement getOfficialAccount() method.
+        return null;
     }
 }
