@@ -1,28 +1,26 @@
 <?php
 
-namespace Tourze\WechatOfficialAccountContracts\Tests\Mock;
+declare(strict_types=1);
+
+namespace Tourze\WechatOfficialAccountContracts\Tests;
 
 use Tourze\WechatOfficialAccountContracts\OfficialAccountInterface;
 use Tourze\WechatOfficialAccountContracts\UserInterface;
 
-/**
- * UserInterface 的模拟实现，用于测试
- */
 class MockUser implements UserInterface
 {
-    private string $openId;
-    private ?string $unionId;
-    private ?string $avatarUrl;
-
     public function __construct(
-        string $openId,
-        ?string $unionId = null,
-        ?string $avatarUrl = null
-    )
+        private mixed $id = null,
+        private string $openId = '',
+        private ?string $unionId = null,
+        private ?string $avatarUrl = null,
+        private ?OfficialAccountInterface $officialAccount = null,
+    ) {
+    }
+
+    public function getId(): mixed
     {
-        $this->openId = $openId;
-        $this->unionId = $unionId;
-        $this->avatarUrl = $avatarUrl;
+        return $this->id;
     }
 
     public function getOpenId(): string
@@ -42,6 +40,6 @@ class MockUser implements UserInterface
 
     public function getOfficialAccount(): ?OfficialAccountInterface
     {
-        return null;
+        return $this->officialAccount;
     }
 }

@@ -1,14 +1,14 @@
 {
   "name": "tourze/wechat-official-account-contracts",
-  "description": "微信用户定义",
+  "description": "微信公众号用户接口定义和合约规范",
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": "^8.1"
+    "composer-runtime-api": "^2.0"
   },
   "require-dev": {
     "phpstan/phpstan": "^2.1",
-    "phpunit/phpunit": "^10.0"
+    "phpunit/phpunit": "^11.5"
   },
   "autoload": {
     "psr-4": {
