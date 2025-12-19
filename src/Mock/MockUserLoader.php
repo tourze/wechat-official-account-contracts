@@ -8,6 +8,11 @@ use Tourze\WechatOfficialAccountContracts\OfficialAccountInterface;
 use Tourze\WechatOfficialAccountContracts\UserInterface;
 use Tourze\WechatOfficialAccountContracts\UserLoaderInterface;
 
+/**
+ * Mock 实现用于测试 UserLoaderInterface
+ *
+ * @internal 内部测试辅助类，被 UserLoaderInterfaceTest 和 UserInterfaceIntegrationTest 间接覆盖
+ */
 class MockUserLoader implements UserLoaderInterface
 {
     /**

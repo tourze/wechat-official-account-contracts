@@ -6,9 +6,7 @@ namespace Tourze\WechatOfficialAccountContracts\Tests;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use Tourze\WechatOfficialAccountContracts\Tests\MockOfficialAccount;
-use Tourze\WechatOfficialAccountContracts\Tests\MockUser;
-use Tourze\WechatOfficialAccountContracts\Tests\MockUserLoader;
+use Tourze\WechatOfficialAccountContracts\Mock\MockUserLoader;
 use Tourze\WechatOfficialAccountContracts\UserInterface;
 use Tourze\WechatOfficialAccountContracts\UserLoaderInterface;
 
